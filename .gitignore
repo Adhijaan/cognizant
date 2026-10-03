@@ -44,3 +44,14 @@ example
 
 .vscode/*
 .claude/*
+# server secrets
+.env
+.env.*
+!.env.example
+
+# replay recordings (team walks only — frames are images of real people/places)
+recordings/*
+!recordings/.gitkeep
+
+# generated earcon clips are committed on purpose; build output is not
+web/dist/

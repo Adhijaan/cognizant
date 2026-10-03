@@ -37,7 +37,18 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "setup": "npm --prefix server install && npm --prefix web install",
+    "build": "npm --prefix web run build",
+    "server": "npm --prefix server run start",
+    "server:dev": "npm --prefix server run dev",
+    "test:server": "npm --prefix server run test",
+    "engine:create": "npm --prefix server run engine:create",
+    "tunnel:sync": "npm --prefix server run tunnel:sync",
+    "models:list": "npm --prefix server run models:list",
+    "earcons:generate": "npm --prefix server run earcons:generate",
+    "test:vision": "npm --prefix server run test:vision --",
+    "replay": "npm --prefix server run replay --"
   },
   "private": true
 }

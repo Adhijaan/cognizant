@@ -1,0 +1,6 @@
+{
+  "_readme": "Hand-marked entrances for demo buildings (design.md §7). Building coordinates are rarely the door, so routes end here instead of at the Places pin. Stand at the door, read lat/lng off the phone (the server logs `[L2] fix`), and add an entry. Keys are matched against the resolved place name, case-insensitive. `label` is what gets spoken on arrival.",
+  "entrances": {
+    "Example Hall": { "lat": 0, "lng": 0, "label": "the Example Hall north entrance", "accessible": true, "disabled": true }
+  }
+}

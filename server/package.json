@@ -1,0 +1,35 @@
+{
+  "name": "cognizant-server",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "engine:create": "tsx scripts/engine-create.ts",
+    "tunnel:sync": "tsx scripts/tunnel-sync.ts",
+    "models:list": "tsx scripts/models-list.ts",
+    "test:vision": "tsx scripts/test-vision.ts",
+    "earcons:generate": "tsx scripts/earcons-generate.ts",
+    "replay": "tsx scripts/replay.ts"
+  },
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.70.0",
+    "@google/genai": "2.27.0",
+    "dotenv": "^18.0.5",
+    "express": "5.2.1",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "@types/ws": "^8.18.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
